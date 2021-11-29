@@ -74,7 +74,7 @@
         android:id="@+id/tv_question"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="What are you feeling?"
+        android:text="How are you feeling today?"
         android:textStyle="bold"
         android:gravity="center"
         android:layout_margin="10dp"
@@ -82,6 +82,17 @@
         app:layout_constraintBottom_toTopOf="@+id/row_feelings"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"/>
+
+    <Button
+        android:id="@+id/btn_logged_already"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:backgroundTint="#DCB43D"
+        android:text="Already logged your mood?"
+        app:layout_constraintTop_toBottomOf="@+id/row_feelings"/>
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
