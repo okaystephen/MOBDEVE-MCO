@@ -28,27 +28,30 @@ class MainActivity : AppCompatActivity() {
         btn_logged_already = findViewById(R.id.btn_logged_already)
 
         iv_sad!!.setOnClickListener {
-            val gotoLogActivity = Intent(applicationContext, LogActivity::class.java)
+            Toast.makeText(applicationContext,
+                "Mood is: Sad", Toast.LENGTH_SHORT).show()
 
-            var bundle = Bundle()
+            val gotoLogActivity = Intent(applicationContext, LogActivity::class.java)
             gotoLogActivity.putExtra("mood", "sad")
             startActivity(gotoLogActivity)
             finish()
         }
 
         iv_neutral!!.setOnClickListener {
-            val gotoLogActivity = Intent(applicationContext, LogActivity::class.java)
+            Toast.makeText(applicationContext,
+                "Mood is: Neutral", Toast.LENGTH_SHORT).show()
 
-            var bundle = Bundle()
+            val gotoLogActivity = Intent(applicationContext, LogActivity::class.java)
             gotoLogActivity.putExtra("mood", "neutral")
             startActivity(gotoLogActivity)
             finish()
         }
 
         iv_happy!!.setOnClickListener {
-            val gotoLogActivity = Intent(applicationContext, LogActivity::class.java)
+            Toast.makeText(applicationContext,
+                "Mood is: Happy", Toast.LENGTH_SHORT).show()
 
-            var bundle = Bundle()
+            val gotoLogActivity = Intent(applicationContext, LogActivity::class.java)
             gotoLogActivity.putExtra("mood", "happy")
             startActivity(gotoLogActivity)
             finish()
@@ -56,7 +59,6 @@ class MainActivity : AppCompatActivity() {
 
         btn_logged_already!!.setOnClickListener {
             val gotoWeekActivity = Intent(applicationContext, WeekActivity::class.java)
-            
             startActivity(gotoWeekActivity)
             finish()
         }
